@@ -1,0 +1,58 @@
+    *{
+        box-sizing: border-box;
+    }
+
+    body{
+        margin: 0;
+    }
+    
+    .banner{
+        height: 50vh;           /* takes full height of viewport */
+        width: 100%;             /* full width of screen */
+        background-color: black; /* background color black */
+        color: rgb(46, 46, 74);  /* text color */
+        display: flex;           /* enables flexbox */
+        align-items: center;     /* vertical center */
+        justify-content: center; /* horizontal center */
+    }
+
+    h1{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 3rem;
+        margin: 0;
+    }
+
+    h2{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .hide{
+        display: none;           /* hides the element */
+    }
+
+    .show{
+        display: block;          /* shows the element */
+    }
+
+    /* Media Query for screens with a maximum width of 600px */
+
+@media (max-width: 600px){
+    .banner{
+        background-color: blue; /* changes background color to blue */
+        color: white;           /* changes text color to white */
+        
+    }
+    
+    }
+
+    .show{
+        display: block;
+        background-color: brown;
+    }
+
+    .hide{
+        display: none;
+        background-color: chartreuse;
+    }

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>basic javascript</title>
+</head>
+<body>
+    <h1 id="start">welcome</h1>
+    <button onclick="onalert()" id="btn">click</button><br>
+
+    <script src="functionjs.js">
+        // Accessing and changing text using JavaScript
+            document.getElementById("start").innerHTML = "bye";
+            document.getElementById("start").style.fontStyle="italic";
+            document.getElementById("start").style.textAlign="center";
+            document.getElementById("start").style.justifyContent="center";
+            document.getElementById("start").style.alignItems="center";
+            document.getElementById("start").style.backgroundColor="yellow"
+
+        // accsessing this element to a variable
+            var start = document.getElementById("start");
+            start.style.fontSize="50px";
+            start.style.color="blue";
+
+        //consling // we can create in a var variable so much elements.lile
+        //aruthametic oparations
+            var a,b,c,d,e,f,g;
+            a=12;
+            b=7;
+
+            c=a+b;
+            d=a-b;
+            e=a/b;
+            f=a*b;
+            g=a%b;
+
+
+        // showing result 
+            console.log(c);
+            console.log(d);
+            console.log(e);
+            console.log(f);
+            console.log(g);
+
+        // anothor way to create variable a , we can change this value 
+            let h = 5;
+            h=49;
+
+            console.log(h);
+
+        // third method to create variable "const", it cant change the value
+            const i=10;
+
+            console.log(i);
+
+        // data types we can call it "var,let,const" , and it is coming like how we are giving the data
+            let var1 = "string data"  // string data
+            var var2 = false; //boolean data
+            const var3= 34  //integer data
+
+
+            console.log(var1);
+            console.log(var2);
+            console.log(var3);
+
+        // seeing type which type data is choosen
+            console.log(typeof var1 , typeof var2, typeof var3);
+
+        //comparison oparator
+        // < lesser, > greater , == equal to , <= equal or lesser , >=equal or greater , != not equal to.
+        // the main opararior "===" it is to check the type and value.
+            let aa=30;
+            let bb=30;
+            let cc=35;
+            let dd="40"
+
+            console.log(aa==bb);
+            console.log(aa>cc);
+            console.log(aa===dd);
+
+        
+        // logical 
+        // oparators AND && , OR || , 
+            console.log(aa >= bb && dd > cc);
+            console.log(aa > dd || dd < cc);
+
+
+        // conditional oparator , here's happending checking x value is true or false if it's true it is going to true statement else it goes false statement
+            let x = 5;
+            let y = x === 6 ? "right" : "not right";
+
+            console.log(y);
+</script>
+<script src="array.js"></script>
+<script src="ifstatement.js"></script>
+<script src="events.js"></script>
+</body>
+</html>
